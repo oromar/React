@@ -15,7 +15,7 @@ const SORTS = {
 const withLoading = (Component) => (isLoading, ...rest) =>
   isLoading ? <Loading /> : <Component {...rest} />
 
-const ButtonWithLoading = withLoading(Button)
+
 
 class App extends Component {
   constructor (props) {
@@ -233,5 +233,7 @@ class Loading extends Component {
     </div>
   }
 }
+
+const ButtonWithLoading = withLoading(Button)
 
 export default App
