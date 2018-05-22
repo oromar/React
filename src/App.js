@@ -38,6 +38,7 @@ class App extends Component {
 
   onSort (sortKey) {
     const isSortReverse = this.state.sortKey === sortKey && !this.state.isReverse
+	this.state.isReverse = !this.state.isReverse
     this.setState({sortKey: sortKey, isSortReverse})
   }
 
